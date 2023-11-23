@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Edit Product</h1>
+
+    {{ form_start(form) }}
+    {{ form_row(form.name, {'label': 'Name:'}) }}
+    {{ form_row(form.description, {'label': 'Description:'}) }}
+    {{ form_row(form.price, {'label': 'Price:'}) }}
+    <button type="submit">Update Product</button>
+    {{ form_end(form) }}
+
+    <a href="{{ path('product_show') }}">Back to Product List</a>
+{% endblock %}

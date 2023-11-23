@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Edit Category</h1>
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button type="submit">Update Category</button>
+    {{ form_end(form) }}
+
+    <a href="{{ path('category_index') }}">Back to Category List</a>
+{% endblock %}
